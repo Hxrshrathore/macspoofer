@@ -9,7 +9,7 @@ This script allows you to spoof the MAC address of your wireless adapter. It gen
 3. Run the script by executing the following command:
 
 ```shell
-script.bat
+main.bat
 ```
 
 ## Script Explanation

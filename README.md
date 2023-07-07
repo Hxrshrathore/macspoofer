@@ -1,24 +1,26 @@
-# Project MAC SPOOFER
+# MAC Address Spoofing Script
 
-Bypass bandwidth limitations with ease using our MAC SPOOFER
+This script allows you to spoof the MAC address of your wireless adapter. It generates a random MAC address and changes the current MAC address of the specified wireless interface.
 
-## Table of Contents
+## Usage
 
-- [Project Overview](#project-overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+1. Open a command prompt.
+2. Navigate to the directory where the script is located.
+3. Run the script by executing the following command:
 
-## Project Overview
+```shell
+script.bat
+```
 
-Provide a brief overview of the project, highlighting its main features and goals. Include any relevant information about the project's background, purpose, or motivation.
+## Script Explanation
 
-## Installation
+- The script starts by searching for the wireless adapter interface name using the `netsh` command.
+- Once the interface name is found, it generates a random MAC address using the `%random%` variable.
+- The MAC address is then changed using the `macchanger` command, with the generated MAC address and the interface name as arguments.
+- Finally, a success message is displayed indicating that the MAC address has been spoofed.
 
-Describe how to install and set up the project. Include step-by-step instructions or provide a script/command to automate the installation process if applicable.
+Note: Make sure you have the `macchanger` tool installed on your system for this script to work correctly.
 
-```bash
-$ git clone https://github.com/your-username/your-repository.git
-$ cd your-repository
-$ npm install
+## License
+
+This script is released under the [MIT License](https://opensource.org/licenses/MIT).
